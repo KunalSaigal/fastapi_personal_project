@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.coditas.codilytics",
+        "sha256_cert_fingerprints": [
+          "71:14:B3:DA:90:FA:4B:16:80:F1:ED:87:E1:32:46:3F:4D:27:4D:56:0D:E9:B5:99:FD:6A:16:22:9E:22:82:B2"
+        ]
+      }
+    }
+  ]
