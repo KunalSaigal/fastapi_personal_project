@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field, field_validator
 from typing import Annotated, Literal
-from config.city_tier import tier_1_cities, tier_2_cities
+from ai_prediction.config.city_tier import tier_1_cities, tier_2_cities
 
 class UserModel (BaseModel):
     age: Annotated[int, Field(..., description="age of the user",gt=0,lt=120)]
@@ -12,7 +12,7 @@ class UserModel (BaseModel):
     occupation: Annotated[Literal['retired', 'freelancer', 'student', 'government_job','business_owner', 'unemployed', 'private_job'], Field(..., description='Occupation of the user')]
        
     @property
-    def bmi(self) -> float:
+    def bmi(self) -> float: 
         return self.weight/(self.height**2)
     
     @property
